@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ISALGO — Immunosequencing Algorithms Laboratory</title>
+<meta name="description" content="ISALGO — the Immunosequencing Algorithms Laboratory. We decode the language of immunity through T-cell repertoire analysis, TCR:pMHC structural modelling and open-source bioinformatics." />
+<link rel="icon" href="assets/logos/lab_dark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600&family=Schibsted+Grotesk:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="ISALGO home">
+      <span class="brand__mark" aria-hidden="true">
+        <span class="brand__dot"></span>
+      </span>
+      <span class="brand__word">isalgo</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#research">Research</a>
+      <a href="#tools">Tools</a>
+      <a href="#publications">Publications</a>
+      <a href="#team">Team</a>
+      <a href="#institute">Institute</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle colour theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g stroke-linecap="round"><line x1="12" y1="2.5" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="21.5" y2="12"/><line x1="5.2" y1="5.2" x2="6.9" y2="6.9"/><line x1="17.1" y1="17.1" x2="18.8" y2="18.8"/><line x1="18.8" y1="5.2" x2="17.1" y2="6.9"/><line x1="6.9" y1="17.1" x2="5.2" y2="18.8"/></g></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.2A8 8 0 0 1 9.8 4 7 7 0 1 0 20 14.2Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__atmos" aria-hidden="true">
+      <span class="blob blob--teal"></span>
+      <span class="blob blob--amber"></span>
+      <span class="grid-overlay"></span>
+    </div>
+    <div class="hero__inner">
+      <figure class="hero__logo reveal">
+        <img class="theme-img" alt="ISALGO laboratory logo — a microscope, DNA helix, antibodies and a gear"
+             data-light="assets/logos/lab_light.png" data-dark="assets/logos/lab_dark.png"
+             src="assets/logos/lab_light.png" />
+      </figure>
+      <p class="hero__eyebrow reveal" data-delay="1">Immunosequencing Algorithms Laboratory</p>
+      <h1 class="hero__title reveal" data-delay="2">We decode the<br><em>language of immunity.</em></h1>
+      <p class="hero__lead reveal" data-delay="3">
+        We read the adaptive immune receptor repertoire — millions of sequences that record every
+        infection, vaccine and tumour the immune system has met — and build the algorithms,
+        databases and structural models that turn that signal into understanding.
+      </p>
+      <div class="hero__cta reveal" data-delay="4">
+        <a class="btn btn--primary" href="#research">Explore the research</a>
+        <a class="btn btn--ghost" href="#tools">Open-source tools</a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#statement" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ===== STATEMENT ===== -->
+  <section class="statement" id="statement">
+    <p class="statement__text reveal">
+      Every immune repertoire is a living archive. <span>We learn to read it</span> —
+      linking sequence, structure and specificity to tell self from non-self.
+    </p>
+  </section>
+
+  <!-- ===== RESEARCH ===== -->
+  <section class="section research" id="research">
+    <header class="section__head">
+      <span class="kicker">Research</span>
+      <h2 class="section__title">Five questions we are chasing.</h2>
+    </header>
+    <ol class="research__grid">
+      <li class="rcard reveal">
+        <span class="rcard__num">01</span>
+        <h3>T-cell repertoire annotation</h3>
+        <p>Mapping the antigen specificities hidden in high-throughput TCR sequencing data, and curating a database of receptors with known targets. We infer sequence-motif biomarkers statistically and connect repertoire structure to the immunogenicity of its cognate antigens.</p>
+      </li>
+      <li class="rcard reveal">
+        <span class="rcard__num">02</span>
+        <h3>Modelling the TCR:pMHC complex</h3>
+        <p>In-silico modelling of TCR:peptide:MHC structures, tying structural data to repertoire organisation — CD4/CD8 differentiation and αβ chain pairing. We build statistical models of TCR:pMHC contacts to predict binding for unseen epitopes.</p>
+      </li>
+      <li class="rcard reveal">
+        <span class="rcard__num">03</span>
+        <h3>Epitope immunogenicity</h3>
+        <p>Ranking foreign and self peptides by their predicted ability to provoke a response. We search for the physicochemical signatures the adaptive immune system uses as a self-versus-non-self classifier, and turn them into tools for selecting optimal neoantigen targets.</p>
+      </li>
+      <li class="rcard reveal">
+        <span class="rcard__num">04</span>
+        <h3>Viral infections and vaccination</h3>
+        <p>Screening thousands of repertoire datasets from convalescent, previously-infected and healthy donors to find correlates of immunity to COVID-19 — immunogenic SARS-CoV-2 epitopes, the TCRs that recognise them, and the imprint that past and ongoing infection and vaccination leave behind.</p>
+      </li>
+      <li class="rcard reveal">
+        <span class="rcard__num">05</span>
+        <h3>Cancer immunotherapy</h3>
+        <p>Using TCR and BCR profiling of tumour and blood RNA-seq and single-cell data to stratify patients, predict therapy outcomes and inform prognosis — and combining immunogenicity, repertoire profiling and complex modelling to design neoantigen vaccines.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===== TOOLS ===== -->
+  <section class="section tools" id="tools">
+    <header class="section__head">
+      <span class="kicker">Software</span>
+      <h2 class="section__title">Open tools, built in the open.</h2>
+      <p class="section__sub">Everything we make ships free and open-source — from curated data to blazingly fast and accurate algorithms.</p>
+    </header>
+    <div class="tools__grid">
+
+      <article class="tool reveal">
+        <div class="tool__logo">
+          <img class="theme-img" alt="VDJdb logo" data-light="assets/logos/vdjdb_light.png" data-dark="assets/logos/vdjdb_dark.png" src="assets/logos/vdjdb_light.png" />
+        </div>
+        <div class="tool__body">
+          <p>A curated database of T-cell receptor sequences with known antigen specificities — the starting point for training and benchmarking machine-learning models of antigen recognition.</p>
+          <a class="link-arrow" href="https://vdjdb.com" target="_blank" rel="noopener">vdjdb.com</a>
+        </div>
+      </article>
+
+      <article class="tool reveal">
+        <div class="tool__logo">
+          <img class="theme-img" alt="VDJmatch logo" data-light="assets/logos/vdjmatch_light.png" data-dark="assets/logos/vdjmatch_dark.png" src="assets/logos/vdjmatch_light.png" />
+        </div>
+        <div class="tool__body">
+          <p>Matches T-cell receptor repertoires to their antigen-specificity profiles, annotating raw sequencing output with likely targets.</p>
+          <a class="link-arrow" href="https://github.com/antigenomics/vdjmatch2" target="_blank" rel="noopener">github:vdjmatch</a>
+        </div>
+      </article>
+
+      <article class="tool reveal">
+        <div class="tool__logo">
+          <img class="theme-img" alt="VDJtools logo" data-light="assets/logos/vdjtools_light.png" data-dark="assets/logos/vdjtools_dark.png" src="assets/logos/vdjtools_light.png" />
+        </div>
+        <div class="tool__body">
+          <p>Exploratory analysis of large volumes of immune-repertoire data — turning thousands of AIRR-formatted files into comprehensive statistical summaries via parquet and polars.</p>
+          <a class="link-arrow" href="https://github.com/antigenomics/vdjtools2" target="_blank" rel="noopener">github:vdjtools</a>
+        </div>
+      </article>
+
+      <article class="tool reveal">
+        <div class="tool__logo">
+          <img class="theme-img" alt="mir.py logo" data-light="assets/logos/mirpy_light.png" data-dark="assets/logos/mirpy_dark.png" src="assets/logos/mirpy_light.png" />
+        </div>
+        <div class="tool__body">
+          <p>A universal immune-repertoire analysis library implementing a comprehensive set of state-of-the-art algorithms. Drop it into pipelines and notebooks with ease — Claude Code and GitHub Copilot ready, via skills.</p>
+          <a class="link-arrow" href="https://github.com/antigenomics/mirpy" target="_blank" rel="noopener">github:mirpy</a>
+        </div>
+      </article>
+
+      <article class="tool reveal">
+        <div class="tool__logo">
+          <img class="theme-img" alt="TCRen logo" data-light="assets/logos/tcren_light.png" data-dark="assets/logos/tcren_dark.png" src="assets/logos/tcren_light.png" />
+        </div>
+        <div class="tool__body">
+          <p>Annotate, score and rank TCR:pMHC structures — modelled or native — and predict binding and affinity.</p>
+          <a class="link-arrow" href="https://github.com/antigenomics/tcren_ms" target="_blank" rel="noopener">github:tcren</a>
+        </div>
+      </article>
+
+      <article class="tool reveal">
+        <div class="tool__logo">
+          <img class="theme-img" alt="arda logo" data-light="assets/logos/arda_light.png" data-dark="assets/logos/arda_dark.png" src="assets/logos/arda_light.png" />
+        </div>
+        <div class="tool__body">
+          <p>A blazingly fast V-D-J allele and CDR/FR region mapper for nucleotide and protein immune-receptor sequences — from small FASTA files to large FASTQ volumes across amplicon, RNA- and single-cell sequencing. Built on mmseqs2.</p>
+          <a class="link-arrow" href="https://github.com/antigenomics/arda" target="_blank" rel="noopener">github:arda</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section class="section pubs" id="publications">
+    <header class="section__head">
+      <span class="kicker">Publications</span>
+      <h2 class="section__title">Selected work.</h2>
+      <p class="section__sub">A line through a decade of immune-repertoire research, from error correction to structure-based prediction.</p>
+    </header>
+
+    <div class="pubs__rail">
+      <article class="pub reveal">
+        <div class="pub__cover"><img src="assets/cover/nocover26.jpg" alt="Journal cover" loading="lazy" /></div>
+        <div class="pub__meta">
+          <span class="pub__badge pub__badge--press">In press · 2026</span>
+          <h3>Towards high-quality, large-scale T-cell receptor antigen-specificity data: challenges and promises</h3>
+          <p>Provisionally accepted — full text to be announced.</p>
+        </div>
+      </article>
+
+      <article class="pub reveal">
+        <div class="pub__cover"><img src="assets/cover/natcompsci24.png" alt="Nature Computational Science cover" loading="lazy" /></div>
+        <div class="pub__meta">
+          <a class="pub__badge" href="https://www.nature.com/articles/s43588-024-00653-0" target="_blank" rel="noopener">Nature Computational Science · 2024</a>
+          <h3>Structure-based prediction of T-cell receptor recognition of unseen epitopes using TCRen</h3>
+          <p>Leveraging protein structural data to predict TCR–peptide interactions for unseen epitopes — useful for cancer immunotherapy, autoimmunity and vaccine design. <a href="https://www.nature.com/articles/s43588-024-00654-z" target="_blank" rel="noopener">Featured in News &amp; Views</a>.</p>
+        </div>
+      </article>
+
+      <article class="pub reveal">
+        <div class="pub__cover"><img src="assets/cover/natmeth22.png" alt="Nature Methods cover" loading="lazy" /></div>
+        <div class="pub__meta">
+          <a class="pub__badge" href="https://www.nature.com/articles/s41592-022-01578-0" target="_blank" rel="noopener">Nature Methods · 2022</a>
+          <h3>VDJdb in the pandemic era: a compendium of T-cell receptors specific for SARS-CoV-2</h3>
+          <p>Millions of TCR sequences have now been isolated from donors with COVID-19. This VDJdb release incorporates TCR-specificity data from across the SARS-CoV-2 literature.</p>
+        </div>
+      </article>
+
+      <article class="pub reveal">
+        <div class="pub__cover"><img src="assets/cover/immunity20.jpg" alt="Immunity cover" loading="lazy" /></div>
+        <div class="pub__meta">
+          <a class="pub__badge" href="https://www.cell.com/immunity/fulltext/S1074-7613(20)30469-6" target="_blank" rel="noopener">Immunity · 2020</a>
+          <h3>SARS-CoV-2 epitopes are recognised by a public and diverse repertoire of human T-cell receptors</h3>
+          <p>T-cell responses were stronger in donors sampled during the pandemic than before it — hinting at cross-reactive protection — with public, germline-featured TCR motifs against two A02-restricted epitopes.</p>
+        </div>
+      </article>
+
+      <article class="pub reveal">
+        <div class="pub__cover"><img src="assets/cover/nar18.jpg" alt="Nucleic Acids Research cover" loading="lazy" /></div>
+        <div class="pub__meta">
+          <a class="pub__badge" href="https://academic.oup.com/nar/article/46/D1/D419/4101254" target="_blank" rel="noopener">NAR Database · 2018</a>
+          <h3>VDJdb: a curated database of T-cell receptor sequences with known antigen specificity</h3>
+          <p>Aggregating TCR-specificity information continuously into a curated, public repository — the ability to recognise known epitopes presented by known MHC class I and II molecules.</p>
+        </div>
+      </article>
+
+      <article class="pub reveal">
+        <div class="pub__cover"><img src="assets/cover/natmeth14.png" alt="Nature Methods cover" loading="lazy" /></div>
+        <div class="pub__meta">
+          <a class="pub__badge" href="https://www.nature.com/articles/nmeth.2960" target="_blank" rel="noopener">Nature Methods · 2014</a>
+          <h3>Towards error-free profiling of immune repertoires</h3>
+          <p>MIGEC — molecular-identifier-group-based error correction — enables near-absolute error correction of high-throughput sequencing data while preserving the natural diversity of complex repertoires.</p>
+        </div>
+      </article>
+    </div>
+    <p class="pubs__hint" aria-hidden="true">Scroll &rarr;</p>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="section team" id="team">
+    <header class="section__head">
+      <span class="kicker">People</span>
+      <h2 class="section__title">The lab.</h2>
+    </header>
+
+    <h3 class="team__group">Members</h3>
+    <ul class="people people--lg">
+      <li class="person reveal">
+        <span class="person__photo"><img src="assets/photos/ms.jpg" alt="Mikhail Shugay" loading="lazy" /></span>
+        <p class="person__name">Mikhail “Mike” Shugay, Ph.D</p>
+        <p class="person__role">Principal investigator</p>
+      </li>
+      <li class="person reveal">
+        <span class="person__photo"><img src="assets/photos/ev.jpg" alt="Elizaveta Vlasova" loading="lazy" /></span>
+        <p class="person__name">Elizaveta Vlasova, M.Sc</p>
+        <p class="person__role">Doctoral student · RNRMU / ITMO</p>
+      </li>
+      <li class="person reveal">
+        <span class="person__photo"><img src="assets/photos/dl.jpg" alt="Daniil Luppov" loading="lazy" /></span>
+        <p class="person__name">Daniil Luppov, M.Sc</p>
+        <p class="person__role">Doctoral student · RNRMU / MIPT</p>
+      </li>
+      <li class="person reveal">
+        <span class="person__photo"><img src="assets/photos/ak.jpg" alt="Anna Koneva" loading="lazy" /></span>
+        <p class="person__name">Anna Koneva, M.Sc</p>
+        <p class="person__role">Research associate · RNRMU</p>
+      </li>
+    </ul>
+
+    <h3 class="team__group">Alumni</h3>
+    <ul class="people">
+      <li class="person reveal">
+        <span class="person__photo"><img src="assets/photos/db.jpg" alt="Dmitry Bagaev" loading="lazy" /></span>
+        <p class="person__name">Dmitry Bagaev, Ph.D</p>
+        <p class="person__role">Former M.Sc student · now Eindhoven University of Technology, NL</p>
+      </li>
+      <li class="person reveal">
+        <span class="person__photo"><img src="assets/photos/vk.jpg" alt="Vadim Karnaukhov" loading="lazy" /></span>
+        <p class="person__name">Vadim Karnaukhov, Ph.D</p>
+        <p class="person__role">Former Ph.D student (Skoltech) · now Institut Curie, Paris</p>
+      </li>
+      <li class="person reveal">
+        <span class="person__photo"><img src="assets/photos/yk.jpg" alt="Yulia Kremlyakova" loading="lazy" /></span>
+        <p class="person__name">Yulia Kremlyakova, M.Sc</p>
+        <p class="person__role">Former research associate · now Vall d'Hebron Institute of Oncology, Barcelona</p>
+      </li>
+      <li class="person reveal">
+        <span class="person__photo"><img src="assets/photos/ao.jpg" alt="Anna Obraztsova" loading="lazy" /></span>
+        <p class="person__name">Anna Obraztsova, M.Sc</p>
+        <p class="person__role">Former M.Sc student · now Genentech, San Francisco</p>
+      </li>
+    </ul>
+
+    <h3 class="team__group">Students</h3>
+    <ul class="people">
+      <li class="person reveal">
+        <span class="person__photo"><img src="assets/photos/f_placeholder.jpg" alt="Anastasiia Alexandrova" loading="lazy" /></span>
+        <p class="person__name">Anastasiia Alexandrova</p>
+        <p class="person__role">Diploma · TCR:pMHC structure modelling (MIPT)</p>
+      </li>
+      <li class="person reveal">
+        <span class="person__photo"><img src="assets/photos/m_placeholder.jpg" alt="Mikhail Podsytnik" loading="lazy" /></span>
+        <p class="person__name">Mikhail Podsytnik</p>
+        <p class="person__role">Diploma · T-cell repertoire annotation (ITMO)</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===== INSTITUTE ===== -->
+  <section class="section affil" id="institute">
+    <header class="section__head">
+      <span class="kicker">Affiliations</span>
+      <h2 class="section__title">Where we work.</h2>
+    </header>
+    <div class="affil__grid">
+      <a class="affil__card reveal" href="http://ibch.ru/" target="_blank" rel="noopener">
+        <div class="affil__img"><img src="assets/affiliation/ibch.jpeg" alt="Institute of Bioorganic Chemistry" loading="lazy" /></div>
+        <p><sup>1</sup> Institute of Bioorganic Chemistry of the Russian Academy of Sciences</p>
+      </a>
+      <a class="affil__card reveal" href="https://pirogov-university.com/" target="_blank" rel="noopener">
+        <div class="affil__img"><img src="assets/affiliation/rnrmu.jpg" alt="Russian National Research Medical University" loading="lazy" /></div>
+        <p><sup>2</sup> Institute of Translational Medicine, Russian National Research Medical University</p>
+      </a>
+    </div>
+    <p class="affil__place reveal">Moscow, Russia</p>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="brand__word brand__word--lg">isalgo</span>
+      <p>Immunosequencing Algorithms Laboratory</p>
+    </div>
+    <nav class="footer__contacts" aria-label="Contact">
+      <a href="https://x.com/antigenomics" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://github.com/antigenomics" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:mikhail.shugay@gmail.com">Email</a>
+    </nav>
+  </div>
+  <p class="footer__copy">Copyright © Immunosequencing Algorithms Laboratory 2017–2026</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
