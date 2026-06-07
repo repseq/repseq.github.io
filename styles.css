@@ -468,6 +468,39 @@ a.pub__badge:hover { background: color-mix(in srgb, var(--teal) 26%, transparent
   font-size: 1.05rem; color: var(--ink-soft); letter-spacing: .01em;
 }
 
+/* ---------- COLLABORATIONS ---------- */
+.collab__grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+}
+.collab__card {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 28px 26px 30px;
+  transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s;
+}
+.collab__card:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: var(--teal); }
+.collab__logo {
+  width: 100%; height: 120px;
+  margin-bottom: 22px; padding: 18px 22px;
+  background: #fff; border-radius: 16px;
+  box-shadow: 0 0 0 1px var(--line);
+  overflow: hidden;
+}
+.collab__logo img { width: 100%; height: 100%; object-fit: contain; }
+.collab__card h3 {
+  font-family: var(--font-head); font-weight: 700;
+  font-size: 1.12rem; letter-spacing: -.01em; margin: 0 0 8px;
+}
+.collab__people { margin: 0 0 6px; color: var(--ink); font-weight: 500; font-size: .95rem; }
+.collab__place {
+  margin: 0; color: var(--teal);
+  font-family: var(--font-head); font-weight: 600;
+  font-size: .82rem; letter-spacing: .04em; text-transform: uppercase;
+}
+
 /* ---------- FOOTER ---------- */
 .footer {
   background: var(--bg-2);
@@ -511,12 +544,14 @@ a.pub__badge:hover { background: color-mix(in srgb, var(--teal) 26%, transparent
   .nav__links { display: none; }
   .research__grid { grid-template-columns: 1fr; }
   .tools__grid { grid-template-columns: repeat(2, 1fr); }
+  .collab__grid { grid-template-columns: repeat(2, 1fr); }
   .people { grid-template-columns: repeat(2, 1fr); }
   .affil__grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }
   .tools__grid { grid-template-columns: 1fr; }
+  .collab__grid { grid-template-columns: 1fr; }
   .footer__inner { flex-direction: column; }
   .affil__card { flex-direction: column; text-align: center; }
 }
