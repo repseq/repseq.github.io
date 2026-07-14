@@ -332,6 +332,13 @@ sup { font-size: .62em; }
 .tools__grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
 }
+.tooltba {
+  display: flex; flex-direction: column;
+  background: var(--surface);
+  border-radius: var(--r);
+  overflow: hidden;
+  transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s;
+}
 .tool {
   display: flex; flex-direction: column;
   background: var(--surface);
